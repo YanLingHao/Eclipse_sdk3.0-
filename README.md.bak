@@ -1,6 +1,5 @@
 # gt3-android-sdk
-# master分支为不带Button的验证码,dv-master分支为带Button的验证码
-# 本分支是带Button的验证码，如有需要请下载此demo
+# 本DEMO是带Button的验证码，如有需要请下载此demo和SDK
 # 概述与资源
 
 极验验证3.0 Android SDK提供给集成Android原生客户端开发的开发者使用。
@@ -23,23 +22,11 @@ git clone https://github.com/GeeTeam/gt3-android-sdk.git
 [Github: gt3-android-sdk](https://github.com/GeeTeam/gt3-android-sdk)
 
 ## 手动导入SDK
-从github上获取到`.aar`文件，同时将获取的`.aar`文件拖拽到工程中的libs文件夹下。
+从github上获取到`SDK`文件，同时将获取的`SDK`文件关联到您的项目中，并按照DEMO代码去集成。
 [Github: aar](https://github.com/GeeTeam/gt3-android-sdk/tree/dv-master/app/libs)
 
-在拖入`.aar`到libs文件夹后, 还要检查`.aar`是否被添加到**Library**,要在项目的build.gradle下添加如下代码：
-```java
-        repositories {
-            flatDir {
-                dirs 'libs'
-            }
-        }
 
-```
-并且要手动将aar包添加依赖：
-```java
-       compile(name: 'gt3geetest-sdk', ext: 'aar')
 
-``` 
 ## 初始化
 
 ### 在AndroidManifest.xml文件中添加权限
